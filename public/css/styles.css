@@ -1,0 +1,27 @@
+header {
+    background-color: #EAC926;
+}
+
+.formatoMenu {
+    list-style: none;
+}
+
+.formatoMenu a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.burger-menu {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 20%;
+}
+
+.contenedor-burger {
+    text-align: center;
+}
