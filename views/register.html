@@ -21,15 +21,18 @@
 <body>
     <header>
         <div class="top-header">
-            <div class="logo">
-                <img src="/images/logo-mercado-liebre.svg" alt="logo">
+            <div class="logo-con-formulario">
+                <div class="logo">
+                    <img src="/images/logo-mercado-liebre.svg" alt="logo">
+                </div>
+
+                <div class="formulario" action="#" method="GET">
+                    <input type="text" placeholder="Buscar productos, marcas y más">
+                    <div class="submit"><i class="fa fa-search"></i></div>
+                </div>
+                <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
-            <form class="formulario">
-                <input type="text" placeholder="Buscar productos, marcas">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
         </div>
-            <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
 
 
         <nav>
@@ -63,78 +66,63 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
-        <section class="banner">
-            <img src="/images/img-home-banner.jpg" alt="banner">
-        </section>
     </header>
-    <main>
+    <section class="banner">
+        <img src="/images/img-home-banner.jpg" alt="banner">
+    </section>
+
+    <main class="main-registro">
         <h1>Registro</h1>
 
         <form action="" method="POST" class="registro">
-            <p>
-                <label>Nombre y apellido</label>
-                <input type="text" name="nombre-apellido">
+            <p class="datos-usuario">
+                <input type="text" name="nombre-apellido" placeholder="Nombre y apellido">
             </p>
-            <p>
-                <label>Nombre de usuari@</label>
-                <input type="text" name="nombre-usuario">
+            <p class="datos-usuario">
+                <input type="text" name="nombre-usuario" placeholder="Nombre de usuario">
             </p>
-            <p>
-                <label>Fecha de nacimiento</label>
+            <p class="datos-usuario">
+                <label class="etiqueta-registro">Fecha de nacimiento</label>
                 <input type="date" name="fecha-nacimiento">
             </p>
-            <p>
-                <label>Domicilio</label>
-                <input type="text" name="domicilio">
+            <p class="datos-usuario">
+                <input type="text" class="datos-usuario" name="domicilio" placeholder="Domicilio">
             </p>
-            <p>
-                <label>Perfil del usuario</label>
-                <label><input type="radio" name="perfil-usuario" value="comprar">Comprar</label>
-                <label><input type="radio" name="perfil-usuario" value="vender">Vender</label>
-                
+            <p class="datos-usuario">
+                <label class="etiqueta-registro">Perfil del usuario</label>
+            <div class="etiqueta-registro__radios">
+                <label><input type="radio" name="perfil-usuario" value="comprar">Comprador</label>
+                <label><input type="radio" name="perfil-usuario" value="vender">Vendedor</label>
+            </div>
             </p>
-            <p>
-                <label>Intereses</label>
-                <label><input type="checkbox" name="intereses" value="electro">Electro</label>
+            <p class="datos-usuario">
+                <label class="etiqueta-registro">Intereses</label>
+            <div class="intereses">
+                <div class="intereses__section">
+                    <label class="intereses__label">Electro</label>
+                    <input type="checkbox" class="intereses__checkbox" name="intereses" value="electro">
+                </div>
+                <div class="intereses__section">
+                    <label class="intereses__label">Moda</label>
+                    <input type="checkbox" class="intereses__checkbox" name="intereses" value="electro">
+                </div>
+                <div class="intereses__section">
+                    <label class="intereses__label">Hogar</label>
+                    <input type="checkbox" class="intereses__checkbox" name="intereses" value="electro">
+                </div>
+                <div class="intereses__section">
+                    <label class="intereses__label">Juguetería</label>
+                    <input type="checkbox" class="intereses__checkbox" name="intereses" value="electro">
+                </div>
+                <div class="intereses__section">
+                    <label class="intereses__label">Vida Sana</label>
+                    <input type="checkbox" class="intereses__checkbox" name="intereses" value="electro">
+                </div>
+            </div>
             </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </main>
     <footer>
         <ul class="lista-footer">
