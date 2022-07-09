@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <title>Mercado Liebre</title>
+    <title>Ingresar - Mercado Liebre</title>
 </head>
 
 <body>
@@ -72,78 +72,22 @@
     </section>
 
     <main class="main-registro">
-        <h1 class="titulo-registro">Registro</h1>
+        <h1 class="titulo-registro">Ingresar</h1>
+
 
         <form action="/" method="get" class="registro">
+
             <p class="datos-usuario">
-                <input type="text" name="nombre-apellido" placeholder="Nombre y apellido" minlength="8" required="">
+                <input type="text" name="nombre-usuario" placeholder="Nombre de usuario">
             </p>
             <p class="datos-usuario">
-                <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" required="">
-            </p>
-            <p class="datos-usuario">
-                <input type="email" name="email" placeholder="e-mail" required="">
-            </p>
-            <p class="datos-usuario">
-                <label class="etiqueta-registro">Fecha de nacimiento</label>
-                <input type="date" name="fecha-nacimiento" required="">
-            </p>
-            <p class="datos-usuario">
-                <input type="text" class="datos-usuario" name="domicilio" placeholder="Domicilio" required="">
-            </p>
-            <p class="datos-usuario">
-                <label class="etiqueta-registro">Perfil del usuario</label>
-            <p class="etiqueta-registro__radios">
-                <label><input type="radio" name="perfil-usuario" value="comprar" required="">Comprador</label>
-                <label><input type="radio" name="perfil-usuario" value="vender" required="">Vendedor</label>
-            </p>
-            </p>
-            <p class="datos-usuario">
-                <label class="etiqueta-registro">Intereses</label>
-            <div class="intereses">
-                <div class="intereses__section">
-                    <label class="intereses__label" required="">Electro</label>
-                    <input type="checkbox" class="intereses__checkbox" name="intereses" value="electro">
-                </div>
-                <div class="intereses__section">
-                    <label class="intereses__label" required="">Moda</label>
-                    <input type="checkbox" class="intereses__checkbox" name="intereses" value="electro">
-                </div>
-                <div class="intereses__section">
-                    <label class="intereses__label" required="">Hogar</label>
-                    <input type="checkbox" class="intereses__checkbox" name="intereses" value="electro">
-                </div>
-                <div class="intereses__section">
-                    <label class="intereses__label" required="">Juguetería</label>
-                    <input type="checkbox" class="intereses__checkbox" name="intereses" value="electro">
-                </div>
-                <div class="intereses__section">
-                    <label class="intereses__label" required="">Vida Sana</label>
-                    <input type="checkbox" class="intereses__checkbox" name="intereses" value="electro">
-                </div>
-            </div>
-            </p>
-            <p class="datos-usuario">
-                <label class="etiqueta-registro">Subí tu foto de perfil</label>
-                <input type="file" name="foto-usuario" title="" accept="image/png, image/jpeg">
-            </p>
-            <p class="datos-usuario">
-                <input type="password" class="datos-usuario_contrasena" name="contrasena"
-                    placeholder="Creá tu contraseña" required="">
-            </p>
-            <p class="datos-usuario">
-                <input type="password" class="datos-usuario_contrasena" name="contrasena"
-                    placeholder="Repetí tu contraseña" required="">
+                <input type="password" class="datos-usuario_contrasena" name="contrasena" placeholder="Ingresá tu contraseña">
             </p>
             <div class="datos-usuario">
-                <button type="submit" class="boton-registro">Registrarme</button>
+                <button type="submit" class="boton-registro">Enviar</button>
             </div>
-            <div class="datos-usuario">
-                <button type="reset" class="boton-registro">Borrar datos</button>
-            </div>
-
-
         </form>
+
     </main>
     <footer>
         <ul class="lista-footer">
